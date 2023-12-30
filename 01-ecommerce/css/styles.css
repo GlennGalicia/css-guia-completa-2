@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -13,6 +15,11 @@ a {
     color: black;
 }
 
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 /* Header y Navegacion */
 
 .nombre-sitio {
@@ -20,13 +27,23 @@ a {
     text-align: center;
 }
 
-.nombre-sitio > span {
+.nombre-sitio>span {
     color: #037bc0;
 }
 
+.container-nav {
+    border-top: 1px solid #e1e1e1;
+}
+
 .nav-principal {
-    border-top: #e1e1e1 solid 1px;
     padding: 20px 0;
+}
+
+.hero {
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
 }
 
 /* Box Model */
