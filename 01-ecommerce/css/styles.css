@@ -2,6 +2,23 @@ h1 {
     color: #000;
 }
 
+/* selector desendiente */
 h1 span {
     color: #037bc0;
+}
+
+.enlace{
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    color: #037bc0;
+}
+
+/* Box Model */
+
+.sobre-nosotros {
+    background-color: aquamarine;
+    width: 200px;
+    padding: 25px;
+    box-sizing: border-box;
 }
