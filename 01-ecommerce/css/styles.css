@@ -20,6 +20,11 @@ a {
     margin-inline: auto;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /* Header y Navegacion */
 
 .nombre-sitio {
@@ -49,11 +54,27 @@ a {
     height: 550px;
 }
 
-/* Box Model */
+/* Categorias */
 
-.sobre-nosotros {
-    background-color: aquamarine;
-    width: 200px;
-    padding: 25px;
-    box-sizing: border-box;
+.categorias h2{
+    text-align: center;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #e1e1e1;
+    border-bottom-right-radius: 10px;
 }
