@@ -25,6 +25,16 @@ img {
     display: block;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair', serif;
+}
+
 /* Header y Navegacion */
 
 .nombre-sitio {
@@ -56,7 +66,7 @@ img {
 
 /* Categorias */
 
-.categorias h2{
+.categorias h2 {
     text-align: center;
 }
 
@@ -66,7 +76,7 @@ img {
     gap: 20px;
 }
 
-.categoria a{
+.categoria a {
     display: block;
     text-align: center;
     padding: 20px;
