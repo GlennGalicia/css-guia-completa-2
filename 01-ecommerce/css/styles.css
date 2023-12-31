@@ -279,8 +279,6 @@ h3 {
 
 .entrada:last-of-type {
     border: none;
-    margin: 0;
-    padding: 0;
 }
 
 .entrada-meta {
@@ -294,4 +292,10 @@ h3 {
 
 .entrada-meta span {
     color: #037bc0;
+}
+
+/* Página Entrada */
+.container-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
 }
