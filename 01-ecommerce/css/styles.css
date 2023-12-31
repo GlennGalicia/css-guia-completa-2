@@ -245,3 +245,16 @@ h3 {
     margin-top: 5rem;
     text-align: center;
 }
+
+/* Página Nosotros */
+.container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 4rem;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
