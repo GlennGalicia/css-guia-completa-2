@@ -299,3 +299,19 @@ h3 {
     width: 60rem;
     margin: 0 auto;
 }
+
+/* Página Galeria */
+.galeria {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img {
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+}
