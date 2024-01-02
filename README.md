@@ -49,9 +49,13 @@ img {
 **FlexBox** - se aplica solamente al primer nivel de hijos y el contenido crece automáticamente.
 
 `justify-content` alinear contenido horizontalmente(izq, der, centro).
-`align-item` alinear contenido verticalmente (inicio, fin, centro)
+
+`align-item` alinear contenido verticalmente (inicio, fin, centro).
+
 Si el flex direction es column:
+
 `justify-content` alinear contenido verticalmente (inicio,fin, centro).
+
 `align-item` alinear contenido horizontalmente( izq, der, centro).
 
 **CSS Grid**  - permite definir la ubicación y el tamaño de tu sitio. El contenido se agrupa dentro de un área definida
@@ -80,7 +84,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px */
 }
-````
+```
 
 Recomendaciones:
 > Iniciar los estilos con la parte de los globales.
@@ -89,3 +93,33 @@ Recomendaciones:
 > colocar labels junto a los inputs.
 
 ### Proyecto 02 - FlexBox Básicos
+Propiedades por default se establece cuando el display del contenedor padre es:  `display: flex;`
+
+- Container
+* `flex-direction: row;`
+* `justify-content: flex-start;`
+* `align-items: strech;`
+
+- Items
+* `flex-grow: 0;`
+* `flex-shrink: 1;`
+* `flex-basis: 0%`
+
+Sitio para practicar FlexBox - [Froggy](https://flexboxfroggy.com/).
+[Guía](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) para usar FlexBox.
+
+**flex-wrap (flex-container)**
+- permite agrupar contenido
+
+**flex-basis (flex-items)** 
+- valor inicial de un elemeno
+- soporta ancho con relativos o absolutos 
+
+**flex-grow  (flex-items)**
+- factor de crecimiento de los elementos
+
+**flex-shrink (flex-items)**
+- factor de reducción de los elementos
+
+**flex shorthand (flex-items)**
+- `flex-grow` | `flex-shrink` | `flex-basis`
