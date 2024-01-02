@@ -130,3 +130,40 @@ Sitio para practicar FlexBox - [Froggy](https://flexboxfroggy.com/).
 - `flex-grow` | `flex-shrink` | `flex-basis`
 
 ### Proyecto 03 - CSS Básicos
+Habilitar las propiedades de grid colocando `display: grid;` en el contenedor padre.
+
+Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
+
+[Guía](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display) para usar CSS Grid.
+
+**grid shorthand (Container)**
+- `grid: <grid-rows> / grid: <grid-columns>`
+
+**auto-flow** posiciona los elementos automaticamente, evita el saldo de fila en el grid.
+```css
+.grid {
+    display: grid;
+    grid-auto-flow: dense;
+}
+```
+
+**align-items** sirve para la alineación vertical de los elementos.
+```css
+.grid {
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+```
+
+**auto-fill** genera columnas mientras tenga espacio el contenedor.
+
+**auto-fit** genera las columnas necesarias.
+
+```css
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+```
