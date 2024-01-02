@@ -110,3 +110,8 @@ h2 {
     grid-auto-flow: dense;
     grid: repeat(2, 300px) / repeat(3, 300px);
 }
+
+.grid-7 {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+}
