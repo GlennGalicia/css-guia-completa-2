@@ -174,3 +174,17 @@ h2 {
 .d-flex-11 .box:nth-child(3) {
     flex-grow: 1;
 }
+
+.d-flex-12 {
+    display: flex;
+}
+
+.d-flex-12 .box {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.d-flex-12 .box:nth-child(3) {
+    flex-shrink: 2;
+}
