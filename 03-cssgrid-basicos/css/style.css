@@ -115,3 +115,13 @@ h2 {
     display: grid;
     grid: repeat(2, 1fr) / repeat(3, 1fr);
 }
+
+.grid-8 {
+    display: grid;
+    grid: repeat(2, 20rem) / repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.grid-8 .box{
+    margin: 0;
+}
