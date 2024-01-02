@@ -104,3 +104,9 @@ h2 {
     display: grid;
     grid: repeat(2, 300px) / repeat(3, 300px);
 }
+
+.grid-6 {
+    display: grid;
+    grid-auto-flow: dense;
+    grid: repeat(2, 300px) / repeat(3, 300px);
+}
