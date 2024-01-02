@@ -103,3 +103,11 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
 }
+
+.d-flex-5 {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
