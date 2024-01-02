@@ -202,3 +202,8 @@ h2 {
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
 }
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
