@@ -14,9 +14,13 @@ Enlaces de la documentación vista en el curso:
 #### Notas del curso:
 
 **Margin** toma distancia hacia afuera del elemento.
+
 **Padding** toma distancia hacia adentro del elemento.
+
 **display: block;** el elemento se coloca por debajo del otro sin importar su tamaño.
+
 **display: inline;** el elemento se posiciona a la derecha una vez que haya tomado el espacio que requiere.
+
 **display: inline-block;** permite dar width, height y margin a un elemento inline.
 
 **Imagénes**
@@ -106,6 +110,7 @@ Propiedades por default se establece cuando el display del contenedor padre es: 
 * `flex-basis: 0%`
 
 Sitio para practicar FlexBox - [Froggy](https://flexboxfroggy.com/).
+
 [Guía](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) para usar FlexBox.
 
 **flex-wrap (flex-container)**
@@ -123,3 +128,5 @@ Sitio para practicar FlexBox - [Froggy](https://flexboxfroggy.com/).
 
 **flex shorthand (flex-items)**
 - `flex-grow` | `flex-shrink` | `flex-basis`
+
+### Proyecto 03 - CSS Básicos
