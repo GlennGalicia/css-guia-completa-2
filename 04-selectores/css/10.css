@@ -1,0 +1,7 @@
+a[href^="http"] {
+    color: salmon;
+}
+
+input[type='tel'] {
+    border: 1px solid salmon;
+}
