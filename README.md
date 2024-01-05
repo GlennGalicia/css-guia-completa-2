@@ -171,4 +171,15 @@ Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
 ### Proyecto 04 - Selectores
 
 `.clase1.clase2` > Seleccionar un elemento HTML a través de 2 clases o más
+```css
+.texto.mayusculas {
+    font-size: 10rem;
+}
+```
 
+`etiqueta.clase` > Selecciona un elemento especificando etiqueta y clase
+```css
+div.texto {
+    background-color: aqua;
+}
+```
