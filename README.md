@@ -170,16 +170,48 @@ Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
 
 ### Proyecto 04 - Selectores
 
-`.clase1.clase2` > Seleccionar un elemento HTML a través de 2 clases o más
+`.clase1.clase2` > seleccionar un elemento HTML a través de 2 clases o más
 ```css
 .texto.mayusculas {
     font-size: 10rem;
 }
 ```
 
-`etiqueta.clase` > Selecciona un elemento especificando etiqueta y clase
+`etiqueta.clase` > selecciona un elemento especificando etiqueta y clase
 ```css
 div.texto {
     background-color: aqua;
+}
+```
+
+`clase > clase/elemento/etiqueta` > selecciona al **primer nivel** de hijos.
+
+```html
+<div class="admin">
+    <div>
+        <p>Has Iniciado sesión como: Admin</p>
+            <div>
+                <p>Cerrar Sesión aquí</p>
+            </div>
+    </div>
+</div>
+```
+```css
+.admin > div {
+    border: 2px solid salmon;
+}
+```
+
+`elemento[atributo]` selecciona elemento por sus atributos.
+```css
+a[href^="http"] {
+    color: salmon;
+}
+```
+
+`elemento:not(clase)` selecciona elementos excepto uno o unos
+```css
+p:not(.texto):not(.clase) {
+    color: salmon;
 }
 ```
