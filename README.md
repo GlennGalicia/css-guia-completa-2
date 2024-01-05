@@ -167,3 +167,8 @@ Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 ```
+
+### Proyecto 04 - Selectores
+
+`.clase1.clase2` > Seleccionar un elemento HTML a través de 2 clases o más
+
