@@ -137,9 +137,11 @@ Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
 [Guía](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display) para usar CSS Grid.
 
 **grid shorthand (Container)**
-- `grid: <grid-rows> / grid: <grid-columns>`
 
-**auto-flow** posiciona los elementos automaticamente, evita el saldo de fila en el grid.
+`grid: <grid-rows> / grid: <grid-columns>`
+
+**auto-flow** posiciona los elementos automaticamente, evita el salto de fila en el grid:
+
 ```css
 .grid {
     display: grid;
@@ -147,7 +149,7 @@ Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
 }
 ```
 
-**align-items** sirve para la alineación vertical de los elementos.
+**align-items** sirve para la alineación vertical de los elementos:
 ```css
 .grid {
     height: 300px;
@@ -170,21 +172,21 @@ Sitio para practicar [CSS Grid](https://codepip.com/games/grid-garden/).
 
 ### Proyecto 04 - Selectores
 
-`.clase1.clase2` > seleccionar un elemento HTML a través de 2 clases o más
+`.clase1.clase2` - seleccionar un elemento HTML a través de 2 clases o más:
 ```css
 .texto.mayusculas {
     font-size: 10rem;
 }
 ```
 
-`etiqueta.clase` > selecciona un elemento especificando etiqueta y clase
+`etiqueta.clase` - selecciona un elemento especificando etiqueta y clase:
 ```css
 div.texto {
     background-color: aqua;
 }
 ```
 
-`clase > clase/elemento/etiqueta` > selecciona al **primer nivel** de hijos.
+`clase > clase/elemento/etiqueta` - selecciona al **primer nivel** de hijos:
 
 ```html
 <div class="admin">
@@ -196,22 +198,89 @@ div.texto {
     </div>
 </div>
 ```
+
 ```css
 .admin > div {
     border: 2px solid salmon;
 }
 ```
 
-`elemento[atributo]` selecciona elemento por sus atributos.
+`elemento[atributo]` - selecciona elemento por sus atributos:
 ```css
 a[href^="http"] {
     color: salmon;
 }
 ```
 
-`elemento:not(clase)` selecciona elementos excepto uno o unos
+`elemento:not(clase)` selecciona elementos excepto uno o unos:
 ```css
 p:not(.texto):not(.clase) {
     color: salmon;
+}
+```
+
+### Proyecto 05 - Responsive Web Design
+
+`max-width` - ancho máximo para el elemento, media querie para desktop first, se recomienda implementar los medias queries del más grande al pequeño.
+
+`min-width` - ancho mínimo para el elemento, usar media querie para mobile first, se recomienda implementar los medias queries del más pequeño al mq grande.
+
+> Nota: Se recomienda aplicar media queries con un solo enfoque: `Desktop First` ó `Mobile First`.
+
+Para configurar snippets dentro de VSC: **command + shift + p** > configure user snippets > css.json
+
+#### Tamaños Standar para HTML responsivo
+
+Dispositivos móviles:
+```css
+@media (min-width: 550px) { 
+    ...
+}
+```
+Tablets:
+```css
+@media (min-width: 768px) { 
+    ...
+}
+```
+Landspace:
+```css
+@media (min-width: 1024px) { 
+    ...
+}
+```
+Laptop:
+```css
+@media (min-width: 1200px) { 
+    ...
+}
+```
+Monitores:
+```css
+@media (min-width: 1600px) { 
+    ...
+}
+```
+
+#### Contenedores Responsivos
+
+Se puede implementar la propiedad min(valor-minimo, valor-maximo)
+
+```css
+.contenedor-responsive {
+    background-color: aliceblue;
+    width: min(90%, 1000px);
+    height: 400px;
+    margin: 0 auto;
+}
+```
+
+#### Snippet para imágenes resposivas
+
+La imagen crecera hasta su tamaño máximo natural:
+```css
+img {
+    max-width: 100%;
+    display: block;
 }
 ```
