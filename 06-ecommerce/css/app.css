@@ -315,16 +315,36 @@ img {
 
 .site-footer h3 {
     margin-bottom: .5rem;
-}
-
-.grid-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    text-align: center;
 }
 
 .footer-menu a {
     display: block;
+    text-align: center;
+}
+
+.grid-footer>div {
+    margin-bottom: 2rem;
+}
+
+@media(min-width: 768px) {
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .grid-footer>div {
+        margin-bottom: 2rem;
+    }
+
+    .site-footer h3 {
+        text-align: left;
+    }
+
+    .footer-menu a {
+        text-align: left;
+    }
 }
 
 .copyright {
