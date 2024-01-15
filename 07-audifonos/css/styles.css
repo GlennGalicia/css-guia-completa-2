@@ -264,6 +264,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.modelo:hover {
+    transform: scale(1.1);
 }
 
 .modelo:first-of-type {
