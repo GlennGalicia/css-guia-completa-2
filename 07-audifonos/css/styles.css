@@ -3,7 +3,7 @@
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: 'Lato', sans-serif;
 
-    --primario: #1033ba;
+    --primario: #1073ba;
     --secundario: #00da55;
     --gris: #3b3b3b;
     --grisClaro: #e1e1e1;
@@ -170,4 +170,58 @@ img {
     text-transform: uppercase;
     color: var(--primario);
     margin-top: calc(var(--separacion) / 2);
+}
+
+/* Sobre Tech */
+.sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: right;
+    background-size: 100%, 110rem;
+}
+
+@media (min-width: 768px) { 
+    .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    }
+}
+
+.sobre-tech-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--separacion);
+}
+
+@media (min-width: 768px) { 
+    .sobre-tech-grid {
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        padding: calc( var(--separacion) * 2) 0;
+    }
+}
+
+.texto-sobre-tech {
+    grid-row: 2 / 3;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: var(--separacion);
+}
+
+@media (min-width: 768px) { 
+    .texto-sobre-tech {
+        padding-bottom: 0;
+    }
+}
+
+.texto-sobre-tech h2 {
+    font-size: 4rem;
+}
+
+.texto-sobre-tech p {
+    font-size: 2rem;
+    line-height: 2;
 }
