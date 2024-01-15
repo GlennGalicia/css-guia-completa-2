@@ -284,3 +284,13 @@ img {
     display: block;
 }
 ```
+
+### Proyecto 7 -  recomendaciones CSS
+
+#### Custom Properties
+```css
+:root {
+    --variable1: 'propiedad css';
+    ...
+}
+```

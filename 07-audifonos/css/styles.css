@@ -12,6 +12,21 @@
 
 }
 
+/* Globales */
+html {
+    box-sizing: border-box;
+    /* convierte 1rem a 10px */
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
