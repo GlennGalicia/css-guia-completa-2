@@ -1,0 +1,17 @@
+/* Custom Properties */
+:root {
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Lato', sans-serif;
+
+    --primario: #1033ba;
+    --secundario: #00da55;
+    --gris: #3b3b3b;
+    --grisClaro: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #1f1e1f;
+
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+}
