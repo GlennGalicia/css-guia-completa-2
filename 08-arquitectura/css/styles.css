@@ -90,7 +90,7 @@ img {
     padding: 5rem 0;
 }
 
-header a {
+header a{
     color: var(--blanco);
 }
 
@@ -360,4 +360,30 @@ header a {
         grid-column: 3 / 4;
         grid-row: 1 / 3;
     }
+}
+
+.footer {
+    height: 50rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: var(--blanco);
+}
+
+footer a {
+    color: var(--blanco);
+}
+
+.copyright {
+    background-color: var(--negro);
+    font-size: 2rem;
+    text-align: center;
+    margin: 5rem 0 0 0;
+    padding: 1rem;
 }
