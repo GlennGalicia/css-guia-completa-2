@@ -150,6 +150,10 @@ img {
     }
 }
 
+.navegacion__link--blanco {
+    color: var(--blanco);
+}
+
 .header__boton {
     background-color: var(--primario);
     display: block;
@@ -291,11 +295,15 @@ img {
     color: var(--blanco);
 }
 
+.testimoniales__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
 @media(min-width: 768px) { 
     .testimoniales__grid {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
     }
 }
 
@@ -328,4 +336,29 @@ img {
     color: var(--primario);
     text-align: right;
     font-weight: 700;
+}
+
+ /* footer */
+ .footer {
+    background-color: #5A30A0;
+    padding: 3rem 0;
+ }
+
+@media(min-width: 768px) { 
+    .footer__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+ .footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+ }
+
+@media(min-width: 768px) { 
+    .footer__logo {
+        margin: 0;
+     }
 }
