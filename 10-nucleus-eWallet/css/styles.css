@@ -56,7 +56,7 @@ img {
     width: 90%;
 }
 
-[class$="__heading"]{
+[class$="__heading"] {
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -98,6 +98,7 @@ img {
     .header__logo {
         margin: 0;
     }
+
     .header__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -110,7 +111,7 @@ img {
     font-size: 3rem;
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .header__heading {
         text-align: left;
         font-size: 5rem;
@@ -118,7 +119,7 @@ img {
     }
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .header__imagen {
         max-width: 300px;
         margin: 0 auto;
@@ -131,7 +132,7 @@ img {
     align-items: center;
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .navegacion {
         flex-direction: row;
         align-items: flex-start;
@@ -143,7 +144,7 @@ img {
     color: var(--primario);
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .navegacion__link {
         color: var(--blanco);
     }
@@ -158,7 +159,7 @@ img {
     margin-bottom: 4rem;
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .header__boton {
         display: inline-block;
         padding: 1rem 3rem;
@@ -175,7 +176,7 @@ img {
     flex-direction: column-reverse;
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .nucleus__grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -193,6 +194,15 @@ img {
     transition-duration: 300ms;
 }
 
+@media(min-width: 768px) { 
+    .listado__elemento--2col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 2rem;
+    }
+}
+
 .listado__elemento:hover {
     transform: scale(1.1);
 }
@@ -201,6 +211,22 @@ img {
     margin: 0;
     font-size: 3rem;
     color: var(--primario);
+}
+
+.listado__numero {
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 900;
+    color: var(--primario);
+    text-align: center;
+}
+
+@media(min-width: 768px) { 
+    .listado__numero {
+        flex-basis: 20rem;
+        text-align: right;
+        font-size: 4rem;
+    }
 }
 
 .listado__texto {
@@ -218,11 +244,39 @@ img {
     color: var(--blanco);
 }
 
-@media(min-width: 768px) { 
+@media(min-width: 768px) {
     .seguridad__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem;
         text-align: center;
+    }
+}
+
+/* Comisiones */
+@media(min-width: 768px) {
+    .comisiones__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
+
+@media(min-width: 998px) {
+    .comisiones__grid {
+        align-items: center
+    }
+}
+
+.comisiones__texto {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@media(min-width: 768px) { 
+    .comisiones__texto {
+        text-align: left;
     }
 }
