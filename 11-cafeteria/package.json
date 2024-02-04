@@ -1,0 +1,31 @@
+{
+  "name": "11-cafeteria",
+  "version": "1.0.0",
+  "description": "Aprendiendo SSAS, Gulp, Grid CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GlennGalicia/css-guia-completa-2.git"
+  },
+  "author": "Glenn Galicia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GlennGalicia/css-guia-completa-2/issues"
+  },
+  "homepage": "https://github.com/GlennGalicia/css-guia-completa-2#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.33",
+    "sass": "^1.70.0"
+  },
+  "browserslist":[
+    "last 1 version",
+    "> 1%"
+  ]
+}
