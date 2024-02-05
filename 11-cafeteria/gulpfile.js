@@ -53,4 +53,4 @@ exports.imagenAvif = imagenAvif;
 
 // series - Se inicia una nueva tarea, y hasta que finaliza comienza la siguiente
 // parallel - Todas inicial al mismo tiempo
-exports.default = series(imagenes, imagenWebp, imagenAvif, css, dev);
+exports.default = series(css, dev);
