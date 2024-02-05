@@ -19,10 +19,6 @@ function dev() {
     watch('src/scss/**/*.scss', css)
 }
 
-
-exports.css = css
-exports.dev = dev
-
 // series - Se inicia una nueva tarea, y hasta que finaliza comienza la siguiente
 // parallel - Todas inicial al mismo tiempo
 
